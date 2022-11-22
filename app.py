@@ -6,12 +6,12 @@ app = Flask(__name__)
 
 # Create our routes
 @app.route('/')
-def home():
-	return "Hello World"
+def resume():
+	return render_template("index.html")
 
 # Start our application
 if __name__ == "__main__":
 	app.run(
 		debug=True,
-		# port = 5000
+		port = 4000
 	)
